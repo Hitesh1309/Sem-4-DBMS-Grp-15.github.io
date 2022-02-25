@@ -11,11 +11,25 @@
 body {
   background: white;
   color: black;
+
+  background-color: #ffffff;
+  opacity: 1;
+  background-image: radial-gradient(#000000 2px, transparent 2px),
+    radial-gradient(#000000 2px, #ffffff 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
 }
 
 .dark-mode {
   background: #333;
   color: white;
+
+  background-color: #000000;
+  opacity: 1;
+  background-image: radial-gradient(#ffffff 2px, transparent 2px),
+    radial-gradient(#ffffff 2px, #000000 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
 }
 
 .dark-mode-toggler {
@@ -157,6 +171,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-top-style: dashed;
+  outline-offset: -0.1rem;
+  border-width: 0.1rem;
 }
 .mem1 {
   background: url(/assets/static/imgs/shek.png) center/cover fixed no-repeat;
@@ -169,7 +186,7 @@ body {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.308));
-  border-radius:0 1rem 1rem 0;
+  border-radius: 0 1rem 1rem 0;
 }
 .emcard {
   min-width: 60%;
