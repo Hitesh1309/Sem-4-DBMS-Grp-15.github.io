@@ -5,6 +5,8 @@
   box-sizing: border-box;
   font: inherit;
   font-family: "Poppins", sans-serif;
+
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
@@ -136,6 +138,8 @@ body {
     );
   background-size: 80px 140px;
   background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+
+  scroll-snap-align: center;
 }
 
 .banner {
@@ -166,7 +170,8 @@ body {
 .mem {
   width: 100%;
   max-width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
   background-color: rgb(0, 255, 213);
   display: flex;
   align-items: center;
@@ -174,6 +179,7 @@ body {
   border-top-style: dashed;
   outline-offset: -0.1rem;
   border-width: 0.1rem;
+  scroll-snap-align: center;
 }
 .mem1 {
   background: url(/assets/static/imgs/shek.png) center/cover fixed no-repeat;
@@ -230,6 +236,7 @@ body {
 @media only screen and (max-width: 600px) {
   .mem {
     flex-direction: column;
+    justify-content: end;
   }
 
   .sp1 {
@@ -248,6 +255,7 @@ body {
     max-width: 100%;
     align-items: center;
     justify-items: center;
+    border-radius: 1rem 1rem 0 0;
   }
 
   .emcard {
