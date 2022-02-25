@@ -100,7 +100,7 @@ body {
   justify-content: center;
 }
 .mem1 {
-  background: url(/assets/static/imgs/shek.png) center fixed repeat;
+  background: url(/assets/static/imgs/shek.png) center/cover fixed no-repeat;
 }
 .memcard {
   display: flex;
