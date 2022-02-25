@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font: inherit;
   font-family: "Poppins", sans-serif;
-
+  max-width: 100vw;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
@@ -68,11 +68,11 @@ body.dark-mode {
   filter: drop-shadow(0 0px 4px black);
 }
 
-.navbar.dark-mode{
+.navbar.dark-mode {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.nav-title{
+.nav-title {
   padding: 0.5rem;
   align-self: center;
   font-weight: bold;
@@ -80,11 +80,13 @@ body.dark-mode {
   text-decoration: none;
 }
 
-a,a:visited {
+a,
+a:visited {
   color: white;
 }
 
-a.dark-mode,a.dark-mode:visited{
+a.dark-mode,
+a.dark-mode:visited {
   color: black;
 }
 .hero {
@@ -226,7 +228,7 @@ a.dark-mode,a.dark-mode:visited{
   margin-bottom: -2rem;
 }
 
-.sp1.dark-mode{
+.sp1.dark-mode {
   color: white;
 }
 
@@ -249,10 +251,18 @@ a.dark-mode,a.dark-mode:visited{
   display: flex;
   align-items: center;
   justify-content: left;
+  outline-color: black;
   border-top-style: dashed;
   outline-offset: -0.1rem;
   border-width: 0.1rem;
   scroll-snap-align: center;
+}
+
+.mem.dark-mode {
+  border-color: white;
+  border-top-style: dashed;
+  outline-offset: -0.1rem;
+  border-width: 0.1rem;
 }
 .mem1 {
   background: url(/assets/static/imgs/shek.png) center/cover fixed no-repeat;
@@ -274,7 +284,7 @@ a.dark-mode,a.dark-mode:visited{
   filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.308));
   border-radius: 0 1rem 1rem 0;
 }
-.memcard.dark-mode{
+.memcard.dark-mode {
   background-color: rgba(255, 255, 255, 0.5);
 }
 .mem-name {
@@ -288,8 +298,6 @@ a.dark-mode,a.dark-mode:visited{
   font-size: 2rem;
   font-weight: 500;
 }
-
-
 
 #myBtn {
   display: none; /* Hidden by default */

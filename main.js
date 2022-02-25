@@ -1,20 +1,23 @@
 // Dark mode toggle
-function darkModeToggle(){
-    var elements = [document.body];
-    elements.push(document.getElementById("navbar"));
-    elements.push(document.getElementById("nav-title"));
-    elements.push(document.getElementById("hero"));
-    elements.push(document.getElementById("banner"));
-    elements.push(document.getElementById("sp1"));
-    elements.push(document.getElementById("sp2"));
-    elements.push(...document.getElementsByClassName("memcard"));
-    console.log(elements);
-    elements.forEach((element)=>{element.classList.toggle("dark-mode");})
+function darkModeToggle() {
+  var elements = [document.body];
+  elements.push(document.getElementById("navbar"));
+  elements.push(document.getElementById("nav-title"));
+  elements.push(document.getElementById("hero"));
+  elements.push(document.getElementById("banner"));
+  elements.push(document.getElementById("sp1"));
+  elements.push(document.getElementById("sp2"));
+  elements.push(...document.getElementsByClassName("memcard"));
+  elements.push(...document.getElementsByClassName("mem"));
+  console.log(elements);
+  elements.forEach((element) => {
+    element.classList.toggle("dark-mode");
+  });
 }
 
 //Funtion to control top button visibility
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     Upbutton.style.display = "block";
   } else {
     Upbutton.style.display = "none";
@@ -31,7 +34,7 @@ function topFunction() {
 let Upbutton = document.getElementById("myBtn");
 let width = window.innerWidth > 0 ? window.innerWidth : screen.width;
 window.onscroll = function () {
-  if(width>600){
+  if (width > 600) {
     scrollFunction();
   }
 };
