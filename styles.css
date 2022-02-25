@@ -22,10 +22,7 @@ body {
   background-position: 0 0, 40px 40px;
 }
 
-.dark-mode {
-  background: #333;
-  color: white;
-
+body.dark-mode {
   background-color: #000000;
   opacity: 1;
   background-image: radial-gradient(#ffffff 2px, transparent 2px),
@@ -51,12 +48,12 @@ body {
 }
 
 .dark-mode-toggler:hover {
-  background-color: darkgoldenrod;
+  background-color: rgb(255, 255, 255);
 }
 
 .navbar {
   overflow: hidden;
-  background-color: rgba(205, 130, 255, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   left: 0;
@@ -71,11 +68,24 @@ body {
   filter: drop-shadow(0 0px 4px black);
 }
 
-.nav-title {
+.navbar.dark-mode{
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-title{
   padding: 0.5rem;
   align-self: center;
   font-weight: bold;
   font-size: xx-large;
+  text-decoration: none;
+}
+
+a,a:visited {
+  color: white;
+}
+
+a.dark-mode,a.dark-mode:visited{
+  color: black;
 }
 .hero {
   width: 100vw;
@@ -142,6 +152,61 @@ body {
   scroll-snap-align: center;
 }
 
+.hero.dark-mode {
+  background-color: #000000;
+  opacity: 1;
+  background-image: linear-gradient(
+      30deg,
+      #ffffff 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #ffffff 87.5%,
+      #ffffff
+    ),
+    linear-gradient(
+      150deg,
+      #ffffff 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #ffffff 87.5%,
+      #ffffff
+    ),
+    linear-gradient(
+      30deg,
+      #ffffff 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #ffffff 87.5%,
+      #ffffff
+    ),
+    linear-gradient(
+      150deg,
+      #ffffff 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #ffffff 87.5%,
+      #ffffff
+    ),
+    linear-gradient(
+      60deg,
+      #ffffff77 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #ffffff77 75%,
+      #ffffff77
+    ),
+    linear-gradient(
+      60deg,
+      #ffffff77 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #ffffff77 75%,
+      #ffffff77
+    );
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+
 .banner {
   display: flex;
   flex-direction: column;
@@ -151,10 +216,18 @@ body {
   padding: 0 5rem;
 }
 
+.banner.dark-mode {
+  background-color: #000000;
+}
+
 .sp1 {
   font-size: 4rem;
   font-weight: 600;
   margin-bottom: -2rem;
+}
+
+.sp1.dark-mode{
+  color: white;
 }
 
 .sp2 {
@@ -195,21 +268,28 @@ body {
   min-width: 40%;
   max-width: fit-content;
   padding: 0 2rem;
-  background-color: rgba(51, 51, 51, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.308));
   border-radius: 0 1rem 1rem 0;
 }
+.memcard.dark-mode{
+  background-color: rgba(255, 255, 255, 0.5);
+}
 .mem-name {
+  color: white;
   font-size: 5rem;
   font-weight: 700;
   margin-bottom: -1rem;
 }
 .mem-roll {
+  color: white;
   font-size: 2rem;
   font-weight: 500;
 }
+
+
 
 #myBtn {
   display: none; /* Hidden by default */
