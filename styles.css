@@ -152,6 +152,7 @@ a.dark-mode:visited {
   background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
 
   scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 
 .hero.dark-mode {
@@ -256,6 +257,7 @@ a.dark-mode:visited {
   outline-offset: -0.1rem;
   border-width: 0.1rem;
   scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 
 .mem.dark-mode {
