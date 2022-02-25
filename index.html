@@ -9,21 +9,52 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
-      crossorigin="anonymous"
-    />
+    <link rel="icon" type="image/x-icon" href="">
     <!-- Scripts import -->
     <script src="main.js" async></script>
     <!-- CSS import -->
     <link rel="stylesheet" href="styles.css" />
-    <title>Group 15</title>
+    <script src="https://kit.fontawesome.com/9cfcf7ad68.js" crossorigin="anonymous" async></script>
+    <title>Team 15</title>
   </head>
-  <body>
+  
+  <!-- Body -->
+    <!-- navbar section -->
     <nav class="navbar">
+      <div class="nav-title">
+        <a href="#hero">Team 15</a>
+      </div>
       <div class="logo"></div>
-      <button class="dark-mode-toggler" id="dark-mode-toggler"><i class="far fa-sun"></i></button>
+      <button class="dark-mode-toggler" id="dark-mode-toggler" onclick="darkModeToggle()"><i class="far fa-sun"></i></button>
     </nav>
+
+    <!-- Hero section -->
+    <section class="hero" id="hero">
+      <div class="banner">
+        <span class="sp1">We are,</span>
+        <span class="sp2">TEAM 15.</span>
+      </div>
+    </section>
+
+    <!-- Abishek section -->
+    <section class="mem mem1">
+      <div class="memcard">
+        <span class="mem-name">
+          Abishek
+        </span>
+        <span class="mem-roll">
+          CS20B1064
+        </span>
+      </div>
+      <div class="emcard">
+      </div>
+    </section>
+    
+    <!-- Next member placeholder -->
+    <section class="mem mem2">
+      
+    </section>
+    <!-- scroll back to top -->
+    <button onclick="topFunction()" id="myBtn"><i class="fa-solid fa-angles-up"></i></button>
   </body>
 </html>
