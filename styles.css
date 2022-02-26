@@ -283,6 +283,10 @@ a.dark-mode:visited {
   background: url(/assets/static/imgs/ryanname.png) center/cover fixed no-repeat;
 }
 
+.mem3 {
+  background: url(/assets/static/imgs/hitesh.png) center/cover fixed no-repeat;
+}
+
 .memcard {
   display: flex;
   flex-direction: column;
