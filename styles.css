@@ -275,6 +275,10 @@ a.dark-mode:visited {
   outline-offset: -0.1rem;
   border-width: 0.1rem;
 }
+.mem1 {
+  background: url(/assets/static/imgs/gaurav.png) center/cover fixed no-repeat;
+}
+
 .mem2 {
   background: url(/assets/static/imgs/shek.png) center/cover fixed no-repeat;
 }
