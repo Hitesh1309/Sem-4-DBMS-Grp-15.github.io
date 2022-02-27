@@ -315,6 +315,7 @@ a.dark-mode:visited {
   font-size: 5rem;
   font-weight: 700;
   margin-bottom: -1rem;
+  text-align: center;
   transition: transform 0.2s ease-in-out;
 }
 .mem-roll {
