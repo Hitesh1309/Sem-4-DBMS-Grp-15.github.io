@@ -300,7 +300,7 @@ a.dark-mode:visited {
   flex-direction: column;
   min-width: 40%;
   max-width: fit-content;
-  padding: 0 2rem;
+  padding: 0 2rem 1rem 2rem;
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -324,9 +324,32 @@ a.dark-mode:visited {
   transition: transform 0.2s ease-in-out;
 }
 
-.mem-name:hover, .mem-roll:hover{
-  transform: translateY(-1rem) ;
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: white;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 4rem;
+  height: 4rem;
+  font-size: 3rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.mem-name:hover,
+.mem-roll:hover {
+  transform: translateY(-1rem);
   cursor: default;
+}
+
+.social:hover {
+  transform: translateY(-1rem);
+  cursor: pointer;
 }
 
 #myBtn {
@@ -387,5 +410,14 @@ a.dark-mode:visited {
 
   .mem-name {
     text-align: center;
+  }
+
+  .socials {
+    width:80%;
+    justify-content: space-around;
+  }
+
+  .social {
+    font-size: 3rem;
   }
 }
