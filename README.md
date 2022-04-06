@@ -3,7 +3,7 @@
 
 ## Team Members
 #### Gaurav   - CS20B1021
-#### Abhishek - CS20B1064
+#### Abishek - CS20B1064
 #### Ryan     - CS20B1094
 #### Atharva  - CS20B1116
 #### Hitesh   - CS20B1127
